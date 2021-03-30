@@ -10,7 +10,7 @@ Line Number:
   Line 1
 
 NameError Definition:
-A NmaeError is raised when the given name is invalid or undefined.
+A NameError is raised when the given name is invalid or undefined.
 
 Solution:
 Define DockingStation

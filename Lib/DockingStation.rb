@@ -12,7 +12,10 @@ class DockingStation
 end
 
 class Bike
+  attr_reader :dock_bike
+
   def working?
     true
   end
+
 end

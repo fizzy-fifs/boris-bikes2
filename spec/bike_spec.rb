@@ -2,21 +2,24 @@ require 'DockingStation'
 
 describe 'bike' do
   it 'is working?' do
-    @bike = Bike.new
-    expect(@bike.working?).to eq true
+    
+    expect(Bike.new).to respond_to(:working?)
   end
 end
 
-describe 'release_bike' do
-  it 'release bike' do
-    @docking_station = DockingStation.new
-    expect(@docking_station.release_bike).to eq true
+describe 'dockingstation' do
+  it 'responds to the method release_bike' do
+    expect(DockingStation.new).to respond_to(:release_bike)
+  end
+
+  it 'creates a new instance of bike' do
+    expect(DockingStation.new.release_bike).to be_instance_of(Bike)
   end
 end
+
 
 describe 'working?' do
   it 'is working?' do
-    @docking_station = DockingStation.new
-    expect(@docking_station.working?).to eq true
+    expect(DockingStation.new.working?).to eq true
   end
 end

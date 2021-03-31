@@ -3,7 +3,7 @@ class DockingStation
   end
 
   def release_bike
-    true
+    Bike.new
   end
   
   def working?
